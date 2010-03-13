@@ -15,9 +15,20 @@
 \usepackage{indentfirst}
 \setcounter{tocdepth}{3}
 
-\renewcommand{\rmdefault}{ftm}
-\renewcommand{Оглавление}
+% выставляем параметры страниц
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2.5cm,rmargin=1cm}
+
+%\renewcommand{\rmdefault}{ftm}
+%\renewcommand{Оглавление}
 \renewcommand\theadfont{\normalsize}
+
+% меняем шрифты
+%\renewcommand\large{\@setfontsize\large{15.5}{17}}
+%\renewcommand\Large{\@setfontsize\Large{16.5}{19}}
+
+% меняем оформление оглавления
+\renewcommand{\contentsname}{Оглавление}
 
 \linespread{1.3} % 1,5
 \graphicspath{{images/}}
@@ -38,7 +49,7 @@
 
 % информация о студенте
 \begin{flushright} %выровнять ее по правому краю
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{flushleft} % выровнять её содержимое по левому краю
 Выполнил студент гр. 258\\ %группа
 \underline{ } А.Е.Антонов\\ %ИОФ
@@ -46,8 +57,9 @@
 \end{minipage}
 \end{flushright}
 
+\begingroup
 % информация об оценке
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{flushleft}
 Отчет защищен:\\
 с оценкой \\
@@ -57,16 +69,17 @@
 \end{minipage}
 
 % информация о руководителе
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{flushleft} % выровнять её содержимое по левому краю
 Руководитель практики\\
 заведующий лабораторией машинной графики ИАПУ ДВО РАН, д.т.н.\\
 \underline{ }В.А.Бобков
 \end{flushleft} % конец выравнивания по левому краю
 \end{minipage} % конец врезки
+\endgroup
 
 % регистрационный номер
-\begin{minipage}{0.5\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{flushleft}
 Регистрационный \No \underline{}\\
 \underline{}
@@ -97,10 +110,9 @@
 \tableofcontents % содержание
 
 \newpage
-\section{Глава I}
-\section{Глава II}
+\section{Введение}
+\section{Термины, определения и сокращения}
 \section{Глава III}
 \section{Глава IV}
 
-Тестовый документ, подготовленный в \LaTeX
 \end{document} % конец документа
