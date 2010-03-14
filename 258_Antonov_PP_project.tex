@@ -9,5 +9,42 @@
 
 \subsection{Модули и алгоритмы}
 
+\subsubsection{Классы приложения}
+\begin{itemize}
+\item \textit{MainWindow} -- главное окно приложения
+\item \textit{ImageInfo} -- информация об изображении
+\item \textit{ImagePreview} -- виджет предпросмотра изображений
+\item \textit{ImageScene} -- сцена для отображения изображения
+\end{itemize}
+
+\subsubsection{Класс MainWindow}
+Методы класса:
+\begin{itemize}
+\item \textit{add\_image} -- добавление нового изображения
+\item \textit{load\_metafile} -- загрузка метафайла
+\item \textit{save\_metafile} -- сохранение метафайла
+\end{itemize}
+
+\subsubsection{Класс ImagePreview}
+Методы класса:
+\begin{itemize}
+\item \textit{add\_image} -- добавление нового изображения в блок предпросмотра
+\item \textit{clear} -- очистка блока предпросмотра
+\end{itemize}
+
+\subsubsection{Класс ImageScene}
+Методы класса:
+\begin{itemize}
+\item \textit{rectangle\_changed} -- изменяет параметры объемлющего прямоугольника для изображения
+\item \textit{set\_rectangle} -- устанавливает объемлющий прямоугольник для отображения
+\item \textit{set\_image} -- устанавливает изображение для отображения
+\end{itemize}
+
 \subsection{Проект интерфейса}
+\renewcommand{\figurename}{Рис.}
+\begin{figure}[h]
+\center
+\includegraphics[scale=0.5]{gui}
+\caption{Проект интерфейса}
+\end{figure}
 

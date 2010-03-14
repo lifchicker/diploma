@@ -4,7 +4,13 @@
 \usepackage[russian,english]{babel}
 \usepackage[pdftex,unicode]{hyperref}
 %\usepackage{pscyr}
+\usepackage{cmap}
+\ifx\pdfoutput\undefined
 \usepackage{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\fi
+
 \usepackage{amstext}
 \usepackage{amssymb}
 \usepackage{lscape}
@@ -117,6 +123,8 @@
 \input{258_Antonov_PP_functional_specification}
 \input{258_Antonov_PP_interface_specification}
 \input{258_Antonov_PP_project}
+\input{258_Antonov_PP_realization_and_testing}
+\input{258_Antonov_PP_conclusion}
 
 \include{258_Antonov_PP_bibliography}
 
