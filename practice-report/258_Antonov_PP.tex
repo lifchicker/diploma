@@ -1,0 +1,134 @@
+\documentclass[a4paper,14pt]{extarticle} %extrarticle
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage[pdftex,unicode]{hyperref}
+%\usepackage{pscyr}
+\usepackage{cmap}
+\ifx\pdfoutput\undefined
+\usepackage{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\fi
+
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{lscape}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{ulem}
+\usepackage{indentfirst}
+\setcounter{tocdepth}{3}
+\usepackage{url} % для url'ов
+
+% выставляем параметры страниц
+\usepackage{geometry}
+\geometry{verbose,a4paper,tmargin=2cm,bmargin=2cm,lmargin=2.5cm,rmargin=1cm}
+
+% меняем шрифт на Times New Roman
+%\usepackage{times}
+%\renewcommand{\rmdefault}{ftm}
+%\renewcommand\theadfont{\normalsize}
+
+% меняем шрифты
+%\renewcommand\large{\@setfontsize\large{15.5}{17}}
+%\renewcommand\Large{\@setfontsize\Large{16.5}{19}}
+
+
+\linespread{1.3} % 1,5
+\graphicspath{{../images/}}
+
+\begin{document} % начало документа
+\sloppy
+
+\begin{titlepage} % начало титульной страницы
+
+\thispagestyle{empty}
+
+\begin{center}
+	\small{
+    	\textbf {
+        	Министерство образования и науки Российской Федерации \\
+            Государственное образовательное учреждение высшего профессионального образования \\
+            ДАЛЬНЕВОСТОЧНЫЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\
+            \smallskip \hrule height 2pt \smallskip \hrule \smallskip
+            ИНСТИТУТ МАТЕМАТИКИ И КОМПЬЮТЕРНЫХ НАУК \\
+            Кафедра информатики \\
+    \vspace{2cm}
+    ОТЧЕТ \\
+        }
+    о прохождении преддипломной практики \\
+    }
+    \vspace{4cm}
+
+\end{center}
+\small{
+\begin{multicols}{2}
+    \verb""\\
+    \bigskip
+
+    Отчет защищен: \\
+    с оценкой \\
+    \rule{5cm}{0.5pt} \\
+    \rule{3cm}{0.5pt} М.А.Гузев \\
+    <<\rule{1cm}{0.5pt}>> марта 2010г. \\
+
+    \smallskip
+
+    Регистрационный № \rule{1cm}{0.5pt} \\
+    \rule{5cm}{0.5pt} \\
+
+    \smallskip
+
+    <<\rule{1cm}{0.5pt}>> марта 2010г. \\
+
+    \bigskip
+
+    Выполнил студент гр. 258 \\
+    \rule{4cm}{0.5pt} А.Е.Антонов \\
+    Руководитель практики \\
+    заведующий лабораторией машинной графики ИАПУ ДВО РАН, д.т.н.\\
+    \rule{4cm}{0.5pt} В.А.Бобков \\
+
+    \bigskip
+
+    Практика пройдена в срок \\
+    с <<\rule{1cm}{0.5pt}>> декабря 2009г. \\
+    по <<\rule{1cm}{0.5pt}>> марта 2010г. \\
+    на предприятии \\
+    ДВГУ, Кафедра информатики \\
+
+\end{multicols}
+
+\vfill
+
+\begin{center}
+    г. Владивосток\\
+    2010
+\end{center}
+}
+\end{titlepage} % конец титульной страницы
+
+\setcounter{page}{2}
+% меняем оформление оглавления
+\begin{center}
+\renewcommand{\contentsname}{Оглавление}
+\tableofcontents % содержание
+\end{center}
+
+\newpage
+
+\input{258_Antonov_PP_introduction}
+\input{258_Antonov_PP_specification}
+\input{258_Antonov_PP_data_specification}
+\input{258_Antonov_PP_functional_specification}
+\input{258_Antonov_PP_interface_specification}
+\input{258_Antonov_PP_project}
+\input{258_Antonov_PP_realization_and_testing}
+\input{258_Antonov_PP_conclusion}
+
+\include{258_Antonov_PP_bibliography}
+
+\end{document} % конец документа
+

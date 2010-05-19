@@ -1,4 +1,4 @@
-\documentclass[a4paper,14pt]{article} %extrarticle
+\documentclass[a4paper,14pt]{extarticle} %extrarticle
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
@@ -37,31 +37,33 @@
 
 
 \linespread{1.3} % 1,5
-\graphicspath{{images/}}
+\graphicspath{{../images/}}
 
 \begin{document} % начало документа
+\sloppy
 
 \begin{titlepage} % начало титульной страницы
 
 \thispagestyle{empty}
 
 \begin{center}
-    \textbf {
-        \large{Министерство образования и науки Российской Федерации \\
+	\small{
+    	\textbf {
+        	Министерство образования и науки Российской Федерации \\
             Государственное образовательное учреждение высшего профессионального образования \\
             ДАЛЬНЕВОСТОЧНЫЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ \\
             \smallskip \hrule height 2pt \smallskip \hrule \smallskip
             ИНСТИТУТ МАТЕМАТИКИ И КОМПЬЮТЕРНЫХ НАУК \\
             Кафедра информатики \\
-        }
     \vspace{2cm}
     ОТЧЕТ \\
-    }
+        }
     о прохождении преддипломной практики \\
+    }
     \vspace{4cm}
 
 \end{center}
-
+\small{
 \begin{multicols}{2}
     \verb""\\
     \bigskip
@@ -105,7 +107,7 @@
     г. Владивосток\\
     2010
 \end{center}
-
+}
 \end{titlepage} % конец титульной страницы
 
 \setcounter{page}{2}
@@ -117,16 +119,16 @@
 
 \newpage
 
-\input{258_Antonov_PP_introduction}
-\input{258_Antonov_PP_specification}
-\input{258_Antonov_PP_data_specification}
-\input{258_Antonov_PP_functional_specification}
-\input{258_Antonov_PP_interface_specification}
-\input{258_Antonov_PP_project}
-\input{258_Antonov_PP_realization_and_testing}
-\input{258_Antonov_PP_conclusion}
+\input{258_Antonov_introduction}
+\input{258_Antonov_specification}
+\input{258_Antonov_data_specification}
+\input{258_Antonov_functional_specification}
+\input{258_Antonov_interface_specification}
+\input{258_Antonov_project}
+\input{258_Antonov_realization_and_testing}
+\input{258_Antonov_conclusion}
 
-\include{258_Antonov_PP_bibliography}
+\include{258_Antonov_bibliography}
 
 \end{document} % конец документа
 
